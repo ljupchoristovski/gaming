@@ -1,0 +1,7 @@
+<div class="box-wrapper" (click)="navigateToDetail(boxInfo?.node?.id)">
+  <div class="image-wrapper"><img [src]="boxInfo?.node?.iconUrl" /></div>
+  <div class="body-wrapper">
+    <div>{{ boxInfo?.node?.name }}</div>
+    <div>{{ boxInfo?.node?.cost }}</div>
+  </div>
+</div>

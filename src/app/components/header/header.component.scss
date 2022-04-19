@@ -1,0 +1,14 @@
+.header-wrapper {
+  height: 70px;
+  background: #c3c3ff;
+  text-align: right;
+
+  & .login-details {
+    height: 70px;
+    line-height: 70px;
+    margin-right: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

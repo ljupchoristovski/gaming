@@ -1,0 +1,15 @@
+<div class="container" *ngIf="boxDetails">
+  <div class="image-wrapper"><img [src]="boxDetails?.iconUrl" /></div>
+  <div class="name">{{ boxDetails?.name }}</div>
+  <div class="price">{{ boxDetails?.price }}</div>
+  <div class="slots">
+    <div class="slot" *ngFor="let slot of boxDetails.slots">
+      <div class="image-wrapper">
+        <img [src]="slot?.item?.iconUrl" />
+      </div>
+      <div class="name">{{ slot?.item?.name }}</div>
+      <div class="value">{{ slot?.item?.value }} {{ slot?.item?.currency }}</div>
+    </div>
+  </div>
+  <div class="button"><button type="button" class="btn btn-primary btn-lg" (click)="openBox()">Open</button></div>
+</div>

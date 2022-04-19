@@ -1,0 +1,21 @@
+.box-wrapper {
+  width: 7rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  box-shadow: 2px 1px 8px #888888;
+  padding: 1rem;
+  cursor: pointer;
+
+  & .image-wrapper {
+    & img {
+      width: -webkit-fill-available;
+    }
+  }
+
+  & .body-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

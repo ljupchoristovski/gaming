@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+
+  & .image-wrapper {
+    & img {
+      width: 15rem;
+    }
+  }
+
+  & .slots {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-around;
+
+    & .slot {
+      width: 7rem;
+      height: 10rem;
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+      box-shadow: 2px 1px 8px #888888;
+      cursor: pointer;
+
+      & .image-wrapper {
+        & img {
+          width: 6rem;
+        }
+      }
+    }
+  }
+}

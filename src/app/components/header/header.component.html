@@ -1,0 +1,8 @@
+<div class="header-wrapper">
+  <div class="login-details">
+    <div *ngIf="cookieValue == ''" (click)="login()">login</div>
+    <div *ngIf="cookieValue != ''">
+      {{userInfo?.name}}: {{userInfo?.wallets[0]?.amount}}
+    </div>
+  </div>
+</div>
